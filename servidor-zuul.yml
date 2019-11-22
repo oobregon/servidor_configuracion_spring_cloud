@@ -1,0 +1,16 @@
+server:
+  port: 7000 #puerto del zuul service 
+zuul:
+  ignoredServices: '*'
+  routes:
+      servicio-personas: # Service to create as sample
+        path: /personas/** #path that will be intercepted
+        serviceId: servicio-personas
+      cliente-personas: # Service to create as sample
+        path: /cliente/** #path that will be intercepted
+        serviceId: cliente-personas
+      
+eureka:                  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
