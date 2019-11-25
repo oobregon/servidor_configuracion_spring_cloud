@@ -2,14 +2,14 @@ spring:
   application:
     name: servicio-reservas
 server:
-  port: 9000
+  port: 8001
   servlet:
-    context-path: /vuelos
+    context-path: /reservas
 eureka:
   instance:
     ip-address: 10.2.4.25
     prefer-ip-address: true
-    instance-id: 10.2.4.25:9000    
+    instance-id: 10.2.4.25:8001    
   client:    
     serviceUrl:
       defaultZone: http://10.2.4.24:8761/eureka
