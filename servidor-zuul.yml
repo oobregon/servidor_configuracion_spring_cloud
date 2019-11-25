@@ -1,15 +1,23 @@
 server:
-  port: 7000 #puerto del zuul service 
+  port: 7000 
 zuul:
   ignoredServices: '*'
   routes:
-      servicio-personas: # Service to create as sample
-        path: /personas/** #path that will be intercepted
+      servicio-personas:
+        path: /personas/**
         serviceId: servicio-personas
-      cliente-personas: # Service to create as sample
-        path: /cliente/** #path that will be intercepted
+      cliente-personas: 
+        path: /cliente/**
         serviceId: cliente-personas
-      
+	  servicio-reservas: 
+        path: /reservas/**
+        serviceId: servicio-reservas
+	  servicio-hoteles: 
+        path: /hoteles/**
+        serviceId: servicio-hoteles
+      servicio-vuelos: 
+        path: /vuelos/**
+        serviceId: servicio-vuelos 		      
 eureka:                  
   client:
     serviceUrl:
