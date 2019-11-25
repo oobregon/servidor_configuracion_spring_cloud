@@ -1,4 +1,12 @@
 server:
-  port: 8001
+  port: 9000
   servlet:
     context-path: /personas
+eureka:
+  instance:
+    ip-address: 192.168.1.41
+    prefer-ip-address: true
+    instance-id: 192.168.1.41
+  client:         
+    service-url:
+      defaultZone: http://192.168.1.41:8761/eureka
