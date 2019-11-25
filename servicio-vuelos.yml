@@ -3,14 +3,12 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver  
     url: jdbc:mysql://localhost:3306/viajes                      
     username: root
-    password: root	
-spring:
+    password: root
   jpa:
     hibernate:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-spring:
   application:
     name: servicio-vuelos
 server:
