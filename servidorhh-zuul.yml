@@ -1,0 +1,11 @@
+server:
+  port: 7000 # puerto del servicio zuul  
+zuul:
+  ignoredServices: '*'
+  routes:
+      servicio-personas: # Service to create as sample
+        path: /personas/** # Cuando a este servicio le llegue la dirección /personas, el servicio que atenderá la petición será:
+        serviceId: servicio-personas # Este es el servicio que atiende a la petición que cumple con el patrón del path anterior
+      cliente-personas: # Service to create as sample
+        path: /cliente/** # Cuando a este servicio le llegue la dirección /personas, el servicio que atenderá la petición será:
+        serviceId: cliente-personas # Este es el servicio que atiende a la petición que cumple con el patrón del path anterior
