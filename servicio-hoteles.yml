@@ -5,6 +5,12 @@ spring:
     username: root
     password: root
 spring:
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl    
+spring:
   application:
     name: servicio-hoteles
 server:
