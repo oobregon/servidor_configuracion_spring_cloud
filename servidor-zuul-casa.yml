@@ -5,6 +5,9 @@ zuul:
     serv-pers:
       path: /servpers/**
       service-id: servicio-personas-casa
+    serv-viajes-vuelos:
+      path: /servviajes/vuelos/**
+      service-id: servicio-vuelos-casa
 eureka:
   client:
     register-with-eureka: false    
