@@ -10,9 +10,9 @@ spring:
     password: root
 eureka:
   instance:
-    ip-address: 192.168.1.42
+    ip-address: 192.168.1.41
     prefer-ip-address: true
-    instance-id: 192.168.1.42:9001    
+    instance-id: 192.168.1.41:9001    
   client:    
     serviceUrl:
       defaultZone: http://192.168.1.41:8761/eureka
